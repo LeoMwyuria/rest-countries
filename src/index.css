@@ -76,7 +76,7 @@ input{
 }
 .region{
   font-size: 15px;
-  margin-bottom: 2px;
+  margin-bottom: 3px;
 
 
  width: 120px;
@@ -84,6 +84,7 @@ input{
 }
 .region:hover{
   cursor: pointer;
+  background-color: rgb(122, 121, 121);
 }
 .filter{
   margin-left: 25px;
@@ -219,6 +220,10 @@ background: rgba(43, 56, 68, 1);
   margin-right: auto;
   box-shadow: 2px 2px 4px rgba(197, 197, 197, 0.5);
   
+  }
+  .region:hover{
+    cursor: pointer;
+    background-color: rgb(122, 121, 121);
   }
   .header{
     width: 1440px;
