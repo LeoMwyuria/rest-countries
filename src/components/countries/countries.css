@@ -6,6 +6,7 @@ box-shadow: 2px 2px 4px rgba(161, 161, 161, 0.5);
 }
 .country:hover{
     cursor: pointer;
+    background-color: rgb(122, 121, 121);
 }
 .country-img{
     width: 340px;
@@ -43,6 +44,7 @@ background: rgba(43, 56, 68, 1);
     }
     .darkCountry:hover{
         cursor: pointer;
+        background-color: rgb(122, 121, 121);
     }
     .country-img{
         width: 340px;
