@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 interface Region {
   name: string;
+
 }
 
 const regions: Region[] = [
@@ -14,9 +15,11 @@ const regions: Region[] = [
 
 interface FilterButtonProps {
   filterByRegion: (region: string) => void;
+  classname1: string;
+  classname2: string;
 }
 
-const FilterButton: React.FC<FilterButtonProps> = ({ filterByRegion }) => {
+const FilterButton: React.FC<FilterButtonProps> = ({ filterByRegion,classname1, classname2 }) => {
   const [showFilters, setShowFilters] = useState<boolean>(false);
 
   const toggleFilters = () => {
@@ -25,9 +28,9 @@ const FilterButton: React.FC<FilterButtonProps> = ({ filterByRegion }) => {
 
   return (
     <div>
-      <div className='filter' onClick={toggleFilters}>Filter by Region </div>
+      <div className={classname1} onClick={toggleFilters}>Filter by Region </div>
       {showFilters && (
-        <div className='regionFilters' id="regionFilters">
+        <div className={classname2} id="regionFilters">
           {regions.map(region => (
             <div
               key={region.name}

@@ -15,6 +15,10 @@ interface Country {
 }
 
 function App(): JSX.Element {
+  const [countriesDark, setCountriesDark] = useState('country');
+  const [regionDark, setRegionDark] = useState('regionFilters');
+  const [filterDark, setFilterDark] = useState('filter');
+  const [header, setHeader] = useState('header');
   const [searchDark, setSearchDark] = useState<string>('search');
   const [darkMode, setDarkMode] = useState<string>('main');
   const [darkLight, setDarkLight] = useState<boolean>(false);
@@ -28,15 +32,26 @@ function App(): JSX.Element {
   };
   
 
+  
+  
+
   const darkModeToggle = (): void => {
     if (!darkLight) {
       setDarkMode('dark-mode-main');
       setSearchDark('searchDark');
       setDarkLight(true);
+      setHeader('darkHeader');
+      setFilterDark('filterDark');
+      setRegionDark('darkRegion');
+      setCountriesDark('darkCountry');
     } else {
       setDarkMode('main');
       setSearchDark('search');
       setDarkLight(false);
+      setHeader('header');
+      setFilterDark('filter');
+      setRegionDark('regionFilters');
+      setCountriesDark('country');
     }
   };
 
@@ -69,7 +84,9 @@ function App(): JSX.Element {
 
   return (
     <div className={darkMode}>
-      <Header onClick={darkModeToggle} />
+      <Header onClick={darkModeToggle}
+      classname={header}
+      />
       <div className="search-div">
       <input
   className={searchDark}
@@ -84,10 +101,11 @@ function App(): JSX.Element {
 />
 
       </div>
-      <FilterButton filterByRegion={filterByRegion} />
-      <div className="countries-div">
+      <FilterButton classname1={filterDark} classname2={regionDark} filterByRegion={filterByRegion} />
+      <div className='countries-div'>
         {filteredData.map(country => (
           <Countries
+          classname={countriesDark}
             onclick={() => countryDetailsClick(country)}
             key={country.cca3}
             countryName={country.name.common}

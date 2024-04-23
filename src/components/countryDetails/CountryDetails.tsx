@@ -30,14 +30,17 @@ interface CountryData {
   const [darkLight, setDarkLight] = useState(false);
     const [data, setData] = useState<CountryData | null>(null);
     const { countryName } = useParams<{ countryName: string }>();
+    const [header, setHeader] = useState('header')
     const darkModeToggle = () => {
         if (!darkLight) {
             setDarkMode('dark-mode-main');
             setDarkLight(true); 
+            setHeader('darkHeader')
         } else {
          
             setDarkMode('main');
             setDarkLight(false);
+            setHeader('header')
         }
     };
   
@@ -55,6 +58,7 @@ interface CountryData {
   return (
     <div className={darkMode}>
       <Header
+      classname={header}
       onClick={darkModeToggle}
       
       />

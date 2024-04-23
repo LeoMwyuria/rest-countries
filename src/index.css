@@ -1,10 +1,10 @@
 body{
   font-family: "Nunito Sans";
 }
+
 .main{
   width: 375px;
 height: 100vh;
-
 margin-left: auto;
 margin-right: auto;
 box-shadow: 2px 2px 4px rgba(197, 197, 197, 0.5);
@@ -18,6 +18,16 @@ display: flex;
 align-items: center;
 justify-content: space-between;
 
+box-shadow: 2px 2px 4px rgba(197, 197, 197, 0.5);
+}
+.darkHeader{
+  width: 365px;
+height: 80px;
+padding: 5px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+background: rgba(43, 56, 68, 1);
 box-shadow: 2px 2px 4px rgba(197, 197, 197, 0.5);
 }
 .headerP{
@@ -137,7 +147,8 @@ a {
 }
 .dark-mode-main{
   color: white;
-  background-color: #555;
+  background: rgba(32, 44, 54, 1);
+
   width: 375px;
   height: 100vh;
   padding: 10px;
@@ -152,6 +163,45 @@ a {
   width: 290px;
   height: 48px;
   background-color: #555;
+  color: white;
+}
+.darkHeader{
+  width: 365px;
+height: 80px;
+padding: 5px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+background: rgba(43, 56, 68, 1);
+box-shadow: 2px 2px 4px rgba(197, 197, 197, 0.5);
+}
+.filterDark{
+  margin-left: 25px;
+margin-top: 20px;
+box-shadow: 2px 2px 4px rgba(194, 194, 194, 0.5);
+padding: 5px;
+width: 120px;
+background: rgba(43, 56, 68, 1);
+}
+.filterDark:hover{
+  cursor: pointer;
+}
+.darkRegion{
+  box-shadow: 2px 2px 4px rgba(197, 197, 197, 0.5);
+  margin-top: 5px;
+  width: 130px;
+  margin-left: 25px;
+  position: absolute;
+  color: white;
+  z-index: 2;
+  background: rgba(43, 56, 68, 1);
+
+}
+.searchDark{
+  width: 290px;
+  height: 50px;
+  background: rgba(43, 56, 68, 1);
+
   color: white;
 }
 @media screen and (min-width:1440px){
@@ -303,9 +353,10 @@ a {
   }
   .dark-mode-main{
     color: white;
-    background-color: #555;
+    background: rgba(32, 44, 54, 1);
+
     width: 1440px;
-    height:1110px;
+    height:1132px;
     padding: 10px;
     margin-left: auto;
     margin-right: auto;
@@ -317,7 +368,42 @@ a {
   .searchDark{
     width: 600px;
     height: 56px;
-    background-color: #555;
+    background: rgba(43, 56, 68, 1);
+
     color: white;
   }
+  .darkHeader{
+    width: 1440px;
+  height: 80px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(43, 56, 68, 1);
+  box-shadow: 2px 2px 4px rgba(197, 197, 197, 0.5);
+  }
+  .filterDark{
+    margin-left: 25px;
+  margin-top: 20px;
+  box-shadow: 2px 2px 4px rgba(194, 194, 194, 0.5);
+  padding: 5px;
+  width: 120px;
+  background: rgba(43, 56, 68, 1);
+  }
+  .filterDark:hover{
+    cursor: pointer;
+  }
+  .darkRegion{
+    box-shadow: 2px 2px 4px rgba(197, 197, 197, 0.5);
+    margin-top: 5px;
+    width: 130px;
+    margin-left: 25px;
+    position: absolute;
+    color: white;
+    z-index: 2;
+    background: rgba(43, 56, 68, 1);
+
+  }
+
+  
 }

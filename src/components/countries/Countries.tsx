@@ -8,6 +8,7 @@ interface CountriesProps {
   capital: string;
   imageUrl: string;
   onclick: () => void;
+  classname: string;
 }
 
 
@@ -18,9 +19,10 @@ const Countries: React.FC<CountriesProps> = ({
   capital,
   imageUrl,
   onclick,
+  classname,
 }) => {
   return (
-    <div onClick={onclick} className='country'>
+    <div onClick={onclick} className={classname}>
       <img className='country-img' src={imageUrl} alt={countryName} />
       <p className='countryP'>{countryName}</p>
       <p>Population: {population}</p>
