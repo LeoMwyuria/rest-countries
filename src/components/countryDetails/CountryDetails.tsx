@@ -28,6 +28,7 @@ interface CountryData {
   const CountryDetails: React.FC = () => {
     const [darkMode, setDarkMode] = useState('main')
   const [darkLight, setDarkLight] = useState(false);
+  const [bodyDark, setBodyDark] = useState('bodyLight')
     const [data, setData] = useState<CountryData | null>(null);
     const { countryName } = useParams<{ countryName: string }>();
     const [header, setHeader] = useState('header')
@@ -35,12 +36,14 @@ interface CountryData {
         if (!darkLight) {
             setDarkMode('dark-mode-main');
             setDarkLight(true); 
-            setHeader('darkHeader')
+            setHeader('darkHeader');
+            setBodyDark('bodyDark');
         } else {
          
             setDarkMode('main');
             setDarkLight(false);
-            setHeader('header')
+            setHeader('header');
+            setBodyDark('bodylight');
         }
     };
   
@@ -56,7 +59,8 @@ interface CountryData {
       fetchData();
     }, [countryName]);
   return (
-    <div className={darkMode}>
+    <div className={bodyDark}>
+      <div className={darkMode}>
       <Header
       classname={header}
       onClick={darkModeToggle}
@@ -81,6 +85,8 @@ interface CountryData {
         
       </div>
     </div>
+    </div>
+    
   );
 };
 

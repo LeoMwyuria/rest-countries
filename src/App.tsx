@@ -15,7 +15,7 @@ interface Country {
 }
 
 function App(): JSX.Element {
-  const [bodyDark, setBodyDark] = useState('bodyLight')
+  const [bodyDark, setBodyDark] = useState('bodyLight');
   const [countriesDark, setCountriesDark] = useState('country');
   const [regionDark, setRegionDark] = useState('regionFilters');
   const [filterDark, setFilterDark] = useState('filter');
