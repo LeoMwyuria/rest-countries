@@ -1,0 +1,17 @@
+.country{
+    width: 340px;
+height: 430px;
+box-shadow: 2px 2px 4px rgba(161, 161, 161, 0.5);
+
+}
+.country:hover{
+    cursor: pointer;
+}
+.country-img{
+    width: 340px;
+    height: 190px;
+}
+.countryP{
+   font-size: 25px;
+
+}

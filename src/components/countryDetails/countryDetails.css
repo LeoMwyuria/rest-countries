@@ -1,0 +1,39 @@
+.details-img{
+    width: 350px;
+height: 229px;
+
+}
+.details-name{
+font-size: 22px;
+font-weight: 800;
+line-height: 30.01px;
+text-align: left;
+
+}
+.back{
+    width: 60px;
+    text-align: end;
+    padding-right:10px ;
+    box-shadow: 2px 2px 4px rgba(197, 197, 197, 0.5);
+    background-image: url('../../assets//back.svg');
+    background-repeat: no-repeat;
+
+}
+@media screen and (min-width:1440px){
+    .info{
+        position: relative;
+        left: 900px;
+        bottom: 300px;
+        width: 500px;
+    }
+    .details-img{
+        width: 560px;
+height: 401px;
+position: relative;
+top: 100px;
+left: 50px;
+
+
+    }
+ 
+}
