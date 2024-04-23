@@ -10,6 +10,9 @@ margin-right: auto;
 box-shadow: 2px 2px 4px rgba(197, 197, 197, 0.5);
 
 }
+.bodyDark{
+  background: rgba(32, 44, 54, 1);
+}
 .header{
   width: 365px;
 height: 80px;
@@ -404,6 +407,10 @@ background: rgba(43, 56, 68, 1);
     background: rgba(43, 56, 68, 1);
 
   }
-
+  .bodyDark{
+    background: rgba(32, 44, 54, 1);
+  }
+  
+  
   
 }

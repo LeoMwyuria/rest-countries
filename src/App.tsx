@@ -15,6 +15,7 @@ interface Country {
 }
 
 function App(): JSX.Element {
+  const [bodyDark, setBodyDark] = useState('bodyLight')
   const [countriesDark, setCountriesDark] = useState('country');
   const [regionDark, setRegionDark] = useState('regionFilters');
   const [filterDark, setFilterDark] = useState('filter');
@@ -44,6 +45,7 @@ function App(): JSX.Element {
       setFilterDark('filterDark');
       setRegionDark('darkRegion');
       setCountriesDark('darkCountry');
+      setBodyDark('bodyDark');
     } else {
       setDarkMode('main');
       setSearchDark('search');
@@ -52,6 +54,7 @@ function App(): JSX.Element {
       setFilterDark('filter');
       setRegionDark('regionFilters');
       setCountriesDark('country');
+      setBodyDark('bodyLight');
     }
   };
 
@@ -83,6 +86,7 @@ function App(): JSX.Element {
   console.log("Unique Regions:", uniqueRegions);
 
   return (
+    <div className={bodyDark}>
     <div className={darkMode}>
       <Header onClick={darkModeToggle}
       classname={header}
@@ -117,6 +121,8 @@ function App(): JSX.Element {
         ))}
       </div>
     </div>
+    </div>
+    
   );
 }
 
