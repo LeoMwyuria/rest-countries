@@ -100,7 +100,7 @@ input{
 }
 .countries-div{
   width: 355px;
-height: 720px;
+height: 650px;
 
 margin-left: auto;
 margin-right: auto;
@@ -132,8 +132,8 @@ gap: 30px;
   background: #555;
 }
 a {
-  text-decoration: none; /* Remove underline */
-  color: inherit; /* Inherit color from parent */
+  text-decoration: none; 
+  color: inherit; 
 }
 .dark-mode-main{
   color: white;
@@ -158,7 +158,7 @@ a {
   
   .main{
     width: 1440px;
-    height:1110px;
+    height:1150px;
   
   margin-left: auto;
   margin-right: auto;
