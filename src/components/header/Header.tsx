@@ -12,7 +12,7 @@ const Header: React.FC<HeaderProps> = ({ onClick,classname }) => {
       <p className='headerP'>Where in the world?</p>
       <div onClick={onClick} className='darkmode'>
         <img src={darkmode} alt="" />
-        <span>dark Mode</span>
+        <span >Dark Mode</span>
       </div>
     </div>
   );
